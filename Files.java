@@ -8,8 +8,7 @@ public class Files {
     public static void main(String[] args)throws IOException {
         try{
             int lines=1, words=1, n;
-            try (FileInputStream f = new FileInputStream(
-                    "C:\\Users\\AJAY\\IdeaProjects\\Java Project\\src\\Basic_Programs\\Txt.txt")) {
+            try (FileInputStream f = new FileInputStream("-------PATH-TO-TEXTFILE-------")) {
                 n = f.available();
                 for (int i = 0; i < n; i++) {
                     char ch = (char) f.read();
